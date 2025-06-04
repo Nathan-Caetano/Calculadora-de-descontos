@@ -95,6 +95,16 @@ form {
     margin-bottom: 10px;
 }
 
+#erroNome {
+    color: var(--red-font-);
+    font-size: 14px;
+}
+
+#erroValor {
+    color: var(--red-font-);
+    font-size: 14px;
+}
+
 .campo input {
     padding: 10px;
     border-radius: 10px;

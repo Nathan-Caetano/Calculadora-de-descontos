@@ -20,12 +20,12 @@
                 <div class="campo">
                     <label for="nomeProduto">Nome:</label>
                     <input type="text" placeholder="Digite o nome do produto" id="nomeProduto">
-                    <label for="nomeProduto" class="erros"></label>
+                    <label for="nomeProduto" id="erroNome" class="erro"></label>
                 </div>
                 <div class="campo">
                     <label for="valorProduto">Valor:</label>
                     <input type="number" placeholder="Digite o valor do produto" id="valorProduto">
-                    <label for="valorProduto" class="erros"></label>
+                    <label for="valorProduto" id="erroValor" class="erro"></label>
                 </div>
                 <input type="button" value="Calcular" id="btnCalcular" onclick="calcularDesconto()">
             </form>
