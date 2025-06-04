@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-bg- : #2b2b2b;
+    --white-bg-: #dfdfdf;
+    --red-font-: #EA1D2C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-bg-);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.display {
+    background-color: var(--white-bg-);
+    height: 750px;
+    width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1{
+    color: var(--red-font-);
+    font-size: 35px;
+    font-weight: 800;
+    user-select: none;
+}
+
+header i {
+    color: #353535;
+    font-size: 30px;
+    transition: all .4s ease-in-out;
+}
+
+header i:hover {
+    color: var(--red-font-);
+    cursor: pointer;
+    scale: 1.2;
+    transition: all .1s ease;
+}
+
+header i:active {
+    color: #353535;
+    scale: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+main h2 {
+    color: var(--red-font-);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo label {
+    color: var(--red-font-);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100;
+}
+
+.campo input:focus {
+    border: 2px solid var(--red-font-);
+}
+
+#btnCalcular {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-bg-);
+    background-color: var(--red-font-);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+#btnCalcular:hover {
+    background-color: #ff0015;
+    scale: 1.02;
+    transition: all .1s ease;
+}
+#btnCalcular:active {
+    background-color: #a71421;
+    scale: 1;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: var(--dark-bg-);
+}
+
+#resultado h3 {
+    color: var(--red-font-);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#resultado span {
+    color: var(--red-font-);
+}
