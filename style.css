@@ -119,6 +119,25 @@ form {
     border: 2px solid var(--red-font-);
 }
 
+.formasPagamento {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.opcao label {
+    color: var(--red-font-);
+    font-size: 18px;
+}
+
+.opcao input[type="radio"] {
+    accent-color: var(--red-font-);
+}
+
+.ativo {
+    font-weight: 600;
+}
+
 #btnCalcular {
     padding: 10px;
     border-radius: 10px;
@@ -156,6 +175,8 @@ form {
     margin-bottom: 10px;
 }
 
-#resultado span {
+#precoAvista span,
+#precoParcelado span,
+#precoCartao span {
     color: var(--red-font-);
 }

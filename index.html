@@ -27,9 +27,27 @@
                     <input type="number" placeholder="Digite o valor do produto" id="valorProduto">
                     <label for="valorProduto" id="erroValor" class="erro"></label>
                 </div>
+                <div class="formasPagamento">
+                    <div class="opcao">
+                        <input type="radio" name="pagamento" value="10" id="avista">
+                        <label for="Avista">À vista</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="pagamento" value="10" id="cartao">
+                        <label for="cartao">Cartão</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="pagamento" value="10" id="parcelado">
+                        <label for="parcelado">Parcelado 2x</label>
+                    </div>
+                </div>
                 <input type="button" value="Calcular" id="btnCalcular" onclick="calcularDesconto()">
             </form>
             <p id="resultado">
+                <h3 id="nomeProduto"></h3>
+                <p id="precoAvista"></p><br>
+                <p id="precoCartao"></p><br>
+                <p id="precoParcelado"></p>
             </p>
         </main>
     </div>
